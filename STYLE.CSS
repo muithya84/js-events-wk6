@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.button-style {
+  padding: 10px 20px;
+  margin: 10px 0;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button-style:hover {
+  background-color: #0056b3;
+}
+
+.accordion {
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  margin-top: 10px;
+}
+
+.panel {
+  display: none;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-top: none;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.error {
+  color: red;
+  font-size: 0.9em;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  padding: 20px;
+  background: white;
+  border: 2px solid #444;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.modal.active {
+  display: block;
+}
+
+#keypressOutput {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.slideshow {
+  max-width: 300px;
+  position: relative;
+  margin-top: 20px;
+}
+
+.slide {
+  display: none;
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+.slide.active {
+  display: block;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.slide-buttons {
+  margin-top: 10px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JavaScript Features Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1> A JavaScript Demo web Page</h1>
+
+  <button id="colorBtn" class="button-style">Click to Change My Color</button>
+
+  <button id="secretBtn" class="button-style">Try Double Click or Long Press</button>
+  <p id="secretMessage"></p>
+
+  <h3>Type on Your Keyboard:</h3>
+  <div id="keypressOutput">Key pressed: ...</div>
+
+  <button class="accordion">Toggle Accordion</button>
+  <div class="panel">
+    <p>This is content inside the accordion.</p>
+  </div>
+
+  <h3>Image Slideshow</h3>
+  <div class="slideshow">
+    <img src="https://via.placeholder.com/300x200?text=Slide+1" class="slide active">
+    <img src="https://via.placeholder.com/300x200?text=Slide+2" class="slide">
+    <img src="https://via.placeholder.com/300x200?text=Slide+3" class="slide">
+    <div class="slide-buttons">
+      <button class="button-style" onclick="changeSlide(-1)">Previous</button>
+      <button class="button-style" onclick="changeSlide(1)">Next</button>
+    </div>
+  </div>
+
+  <button id="showModal" class="button-style">Open Modal</button>
+  <div id="myModal" class="modal">
+    <p>This is a modal box!</p>
+    <button id="closeModal">Close</button>
+  </div>
+
+  <h2>Contact Form</h2>
+  <form id="contactForm">
+    <label>Email:</label><br />
+    <input type="email" id="email" required /><br />
+    <span id="emailError" class="error"></span><br />
+
+    <label>Password:</label><br />
+    <input type="password" id="password" required /><br />
+    <span id="pwdError" class="error"></span><br />
+
+    <button type="submit" class="button-style">Submit</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
